@@ -37,19 +37,18 @@
         <section class="solutions ">
             <div class="container background-container">
          <h1 class="h1-solutions">Effective Solutions for Your Business</h1>
-                <button class="button-style b-text" type="button">Order Service</button>
+                <button class="button-style data-modal-open b-text" type="button">Order Service</button>
             </div>
+            <div class="backdrop is-hidden" data-modal="#">
+                <div class="modal">
+                <button data-modal-close class="modal-btn" type="button">
+                <svg class="modal-icon" width="8px" height="8px">
+                    <use href=""></use>
+                </svg>
+                </button>
+                </div>
+                </div>
             </section>
-<div class="backdrop is-hidden" data-modal="#">
-<div class="modal">
-<button data-modal-close class="modal-btn" type="button">
-<svg class="modal-icon" width="8px" height="8px">
-    <use href=""></use>
-</svg>
-</button>
-</div>
-</div>
-<script src=""></script>
             <section class="features">
                 <div class="container">
                 <h2 class="visually-hidden">Features</h2>
@@ -223,5 +222,7 @@
    </div>
 </div>
     </footer>
+    
+        <script src="./js/modal.js"></script>
 </body>
 </html>
