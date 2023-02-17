@@ -49,6 +49,9 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--navy-blue-color);
 text-decoration: none;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .menu-header:not(:last-child){
     margin-right: 40px;
@@ -69,6 +72,9 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--slate-color);
 text-decoration: none;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .header-list{
   display: flex;
@@ -83,6 +89,9 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--slate-color);
 text-decoration: none;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
  .solutions{
 background-color: var(--navy-blue-color);
@@ -111,7 +120,7 @@ margin: auto;
 margin-bottom: 48px;
 }
 
-.button-style:is(:hover,:focus){
+.b-text:is(:hover,:focus){
     background: var(--ocean-color);
 }
 
@@ -130,6 +139,9 @@ background: var(--iris-color);
 border: none;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
  
 }
 .features{
@@ -229,6 +241,9 @@ margin-bottom: 72px;
 width: 40px;
 height:40px;
 background:var(--iris-color);
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .card{
     display: flex;
@@ -280,6 +295,9 @@ color: var(--light-slate);
     background:var(--body-background-color);
     width: 168px;
 height: 88px;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .customers-block{
     width: calc((100% - 5 * 24px) / 6);
@@ -327,6 +345,9 @@ background: var(--cloud-color);
 cursor: pointer;
 border: 1px solid var(--cornflower-color);
 border-radius: 4px;
+transition-property: background-color, color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons-list{
    display: flex;
@@ -504,7 +525,8 @@ width: 100%;
 height: 100%;
 overflow-y: scroll;
 transform: translate(0, 100%);
-transition: transform 250ms linear;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .overlay-img{
@@ -514,6 +536,7 @@ transition: transform 250ms linear;
 }
 .service:is(:hover, :focus) .overlay{
     transform: translate(0,0);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .service-card{
     position: relative;
@@ -527,7 +550,8 @@ transition: transform 250ms linear;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--white-color);
-    border-radius: 4px;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
 }
 .backdrop.is-hidden{
     opacity: 0;
