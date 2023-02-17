@@ -50,7 +50,7 @@ letter-spacing: 0.02em;
 color: var(--navy-blue-color);
 text-decoration: none;
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
 .menu-header:not(:last-child){
@@ -73,7 +73,7 @@ letter-spacing: 0.02em;
 color: var(--slate-color);
 text-decoration: none;
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
 .header-list{
@@ -90,7 +90,7 @@ letter-spacing: 0.02em;
 color: var(--slate-color);
 text-decoration: none;
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
  .solutions{
@@ -140,9 +140,7 @@ border: none;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
- 
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .features{
     padding-top: 120px;
@@ -242,8 +240,7 @@ width: 40px;
 height:40px;
 background:var(--iris-color);
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .card{
     display: flex;
@@ -296,8 +293,7 @@ color: var(--light-slate);
     width: 168px;
 height: 88px;
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .customers-block{
     width: calc((100% - 5 * 24px) / 6);
@@ -333,8 +329,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
     padding-bottom: 12px;
     padding-left: 24px;
     padding-right: 24px;
-}
-.buttons-style{
     font-family: inherit;
     font-weight: 500;
 font-size: 16px;
@@ -347,7 +341,7 @@ border: 1px solid var(--cornflower-color);
 border-radius: 4px;
 transition-property: background-color, color;
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .buttons-list{
    display: flex;
@@ -389,6 +383,9 @@ padding-top: 8px;
 .service{
 text-decoration: none;
 display: block;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
 }
 .service-card:not(:nth-child(3n)){
 width: calc(((100% - 48px)) / 3);
@@ -447,7 +444,8 @@ border-radius: 50%;
 width: 40px;
 height:40px;
 background: rgba(255, 255, 255, 0.1);
-
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
     }
    
     .social-list{
@@ -526,7 +524,7 @@ height: 100%;
 overflow-y: scroll;
 transform: translate(0, 100%);
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
 .overlay-img{
@@ -536,7 +534,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .service:is(:hover, :focus) .overlay{
     transform: translate(0,0);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .service-card{
     position: relative;
@@ -553,6 +550,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 }
+
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
@@ -566,11 +564,14 @@ border-radius: 4px;
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity var(--iris-color);
-    visibility: var(--iris-color);
+    transition-property: opacity,visibility;
+transition-duration: 250 ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.modal.btn{
+.modal-btn{
     position: absolute;
+    background: var(--cornflower-color);
+border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -579,8 +580,18 @@ border-radius: 4px;
     height: 24px;
     top: 24px;
     right: 24px;
+    padding: 0;
     border-radius: 50%;
     cursor: pointer;
-    color: #000000;
-    border: #d9d9d9;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
+.modal-icon{
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.modal-btn:is(:hover,:focus){
+    background: var(--ocean-color);
+    fill: var(--body-background-color);
+}
+
