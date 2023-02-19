@@ -49,6 +49,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--navy-blue-color);
 text-decoration: none;
+transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 
@@ -67,7 +68,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .link-mail-post:is(:hover,:focus){
     color:  var(--ocean-color);}
 .link-mail-post{ 
-font-family: 'Roboto',sans-serif;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -75,7 +75,7 @@ color: var(--slate-color);
 text-decoration: none;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-
+transition-property: color;
 }
 .header-list{
   display: flex;
@@ -84,7 +84,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .phone-number:is(:hover,:focus){
     color:  var(--ocean-color);}
 .phone-number{  
-font-family: 'Roboto',sans-serif;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -92,7 +91,7 @@ color: var(--slate-color);
 text-decoration: none;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-
+transition-property: color;
 }
  .solutions{
 background-color: var(--navy-blue-color);
@@ -140,6 +139,7 @@ background: var(--iris-color);
 border: none;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+transition-property: background;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -240,6 +240,7 @@ margin-bottom: 72px;
 width: 40px;
 height:40px;
 background:var(--iris-color);
+transition-property:background ;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -293,6 +294,7 @@ color: var(--light-slate);
     background:var(--body-background-color);
     width: 168px;
 height: 88px;
+transition-property:color, border;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -340,7 +342,7 @@ background: var(--cloud-color);
 cursor: pointer;
 border: 1px solid var(--cornflower-color);
 border-radius: 4px;
-transition-property: background-color, color;
+transition-property: background, color,border,box-shadow;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -384,6 +386,7 @@ padding-top: 8px;
 .service{
 text-decoration: none;
 display: block;
+transition-property:box-shadow;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 
@@ -391,7 +394,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .service-card:not(:nth-child(3n)){
 width: calc(((100% - 48px)) / 3);
 margin-right: 24px;
-
 }
 
  .accent2{
@@ -445,6 +447,7 @@ border-radius: 50%;
 width: 40px;
 height:40px;
 background: rgba(255, 255, 255, 0.1);
+transition-property:background ;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
     }
@@ -524,6 +527,7 @@ width: 100%;
 height: 100%;
 overflow-y: scroll;
 transform: translate(0, 100%);
+transition-property:background ;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 
@@ -584,13 +588,11 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     border-radius: 50%;
     cursor: pointer;
+    transition-property:background,fill ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.modal-icon{
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-}
+
 .modal-btn:is(:hover,:focus){
     background: var(--ocean-color);
     fill: var(--body-background-color);
